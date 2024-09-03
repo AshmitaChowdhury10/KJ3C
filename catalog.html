@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CLONE Culture Catalogue</title>
+        <link rel="stylesheet" href="catalog.css">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- DataTables CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.datatables.net/2.0.8/css/dataTables.bootstrap5.css" rel="stylesheet">
+    
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <!-- DataTables JS -->
+        <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.datatables.net/2.0.8/js/dataTables.bootstrap5.js"></script>
+    
+        <script>
+            $(document).ready(function () {
+                new DataTable('#catalog', {
+                    "pageLength": 25
+                });
+            });
+        </script>
+    
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <img src="logo.png" alt="Kristu Jayanti College Logo" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="KJ3Clone.html">Home</a></li>
+                        <li><a href="catalog.html">Culture Catalogue</a></li>
+                        <li><a href="terms.html">Terms &amp; Conditions</a></li>
+                        <li><a href="request.html">Request the Culture</a></li>
+                        <li><a href="doc.html">Documents</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="hero">
+                <img src="p4.png" alt="Researchers working in a lab">
+                <div class="hero-text">
+                    <h1>Kristu Jayanti Culture Collection Centre (KJ3C)</h1>
+                </div>
+            </section>
+            <section class="catalogue" style="margin-block: 20px;">
+                <h2>List of species available</h2>
+                <div class="container mt-5">
+                <div id="catalog_wrapper" class="dt-container dt-bootstrap5 dt-empty-footer">
+                 <div class="row mt-2 justify-content-between">
+                <div class="col-md-auto me-auto ">
+                <div class="dt-length"><select name="catalog_length" aria-controls="catalog" class="form-select form-select-sm" id="dt-length-0"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select><label for="dt-length-0"> entries per page</label></div></div>
+                <div class="col-md-auto ms-auto ">
+                <div class="dt-search"><label for="dt-search-0">Search:</label><input type="search" class="form-control form-control-sm" id="dt-search-0" placeholder="" aria-controls="catalog"></div></div></div>
+                <div class="row mt-2 justify-content-md-center"><div class="col-12 "><table id="catalog" class="table datatable table-striped table-bordered dataTable" style="width: 100%;" aria-describedby="catalog_info">
+                 <colgroup><col data-dt-column="0" style="width: 61.3125px;"><col data-dt-column="1" style="width: 126.075px;"><col data-dt-column="2" style="width: 112.8px;"></colgroup>
+                        <thead>
+                            <tr role="row"><th data-dt-column="0" rowspan="1" colspan="1" class="dt-type-numeric dt-orderable-asc dt-orderable-desc dt-ordering-asc" aria-sort="ascending" aria-label="Sl No: Activate to invert sorting" tabindex="0">
+                                <span class="dt-column-title" role="button">Sl No</span><span class="dt-column-order"></span></th><th data-dt-column="1" rowspan="1" colspan="1" class="dt-orderable-asc dt-orderable-desc" aria-label="Species name: Activate to sort" tabindex="0">
+                                    <span class="dt-column-title" role="button">Species name</span><span class="dt-column-order"></span></th><th data-dt-column="2" rowspan="1" colspan="1" class="dt-orderable-asc dt-orderable-desc" aria-label="Accession number &amp;amp; Link: Activate to sort" tabindex="0">
+                                        <span class="dt-column-title" role="button">Accession number &amp; Link</span><span class="dt-column-order"></span></th></tr>
+                        </thead>
+                        <tbody><tr>
+                                <td class="dt-type-numeric sorting_1">1</td>
+                                <td>Aspergillus tubingensis (KJC48)</td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/OR616777" target="_blank">OR616777</a>
+                                </td>
+                            </tr><tr>
+                                <td class="dt-type-numeric sorting_1">2</td>
+                                <td>Aspergillus niger (KJC47)</td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2585994762" target="_blank">OR616775</a>
+                                </td>
+                            </tr><tr>
+                                <td class="dt-type-numeric sorting_1">3</td>
+                                <td>Aspergillus nidulans (KJC61)</td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2586001060" target="_blank">OR616783</a>
+                                </td>
+                            </tr><tr>
+                                <td class="dt-type-numeric sorting_1">4</td>
+                                <td>Aspergillus nidulans (KJC62)</td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2586002283" target="_blank">OR616785</a>
+                                </td>
+                            </tr><tr>
+                                <td class="dt-type-numeric sorting_1">5</td>
+                                <td>Aspergillus oryzae (KJC77)</td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2586023902" target="_blank">OR616795</a>
+                                </td>
+                            </tr><tr>
+                                <td class="dt-type-numeric sorting_1">6</td>
+                                <td>Aspergillus wentii (KJC75)</td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2586021506" target="_blank">OR616794</a>
+                                </td>
+                            </tr><tr>
+                                <td class="dt-type-numeric sorting_1">7</td>
+                                <td>Aspergillus aculeatus (KJC74)</td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2586018913" target="_blank">OR616792</a>
+                                </td>
+                            </tr><tr>
+                                <td class="dt-type-numeric sorting_1">8</td>
+                                <td>Aspergillus ustus (KJC45)</td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2589082366" target="_blank">OR637385</a>
+                                </td>
+                            </tr><tr>
+                                <td class="dt-type-numeric sorting_1">9</td>
+                                <td>Aspergillus ustus (KJC53)</td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2589082365" target="_blank">OR637384</a>
+                                </td>
+                            </tr><tr>
+                                <td class="dt-type-numeric sorting_1">10</td>
+                                <td>Aspergillus tubingensis (KJC58)</td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2585997417" target="_blank">OR616779</a>
+                                </td>
+                            </tr><tr>
+                                <td class="dt-type-numeric sorting_1">11</td>
+                                <td>Aspergillus flavus (KJC73)</td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2586014847" target="_blank">OR616791</a>
+                                </td>
+                            </tr><tr>
+                                <td class="dt-type-numeric sorting_1">12</td>
+                                <td>Aspergillus niger (KJC79)</td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2586026604" target="_blank">OR616796</a>
+                                </td>
+                            </tr><tr>
+                                <td class="dt-type-numeric sorting_1">13</td>
+                                <td>Mucor amphibiorum (KJC59)</td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2585998507" target="_blank">OR616781</a>
+                                </td>
+                            </tr><tr>
+                                <td class="dt-type-numeric sorting_1">14</td>
+                                <td>Aspergillus flavus (KJC60)</td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2586001061" target="_blank">OR616782</a>
+                                </td>
+                            </tr><tr>
+                                <td class="dt-type-numeric sorting_1">15</td>
+                                <td>Aspergillus nidulans (KJC72)</td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2586010402" target="_blank">OR616790</a>
+                                </td>
+                            </tr><tr>
+                                <td class="dt-type-numeric sorting_1">16</td>
+                                <td>Aspergillus versicolor (KJC36)</td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2584991908" target="_blank">OR616738</a>
+                                </td>
+                            </tr><tr>
+                                <td class="dt-type-numeric sorting_1">17</td>
+                                <td>Aspergillus niger (KJC39)</td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2585991149" target="_blank">OR616768</a>
+                                </td>
+                            </tr><tr>
+                                <td class="dt-type-numeric sorting_1">18</td>
+                                <td>Aspergillus fumigatus (KJC68)</td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2586006420" target="_blank">OR616787</a>
+                                </td>
+                            </tr><tr>
+                                <td class="dt-type-numeric sorting_1">19</td>
+                                <td>Aspergillus terreus (KJC69)</td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2586008393" target="_blank">OR616789</a>
+                                </td>
+                            </tr><tr>
+                                <td class="dt-type-numeric sorting_1">20</td>
+                                <td>Aspergillus niger (KJC67)</td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2586005037" target="_blank">OR616786</a>
+                                </td>
+                            </tr><tr>
+                                <td class="dt-type-numeric sorting_1">21</td>
+                                <td>Aspergillus flavus (KJC30)</td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2592253703" target="_blank">OR672822</a>
+                                </td>
+                            </tr><tr>
+                                <td class="dt-type-numeric sorting_1">22</td>
+                                <td>Aspergillus terreus (KJC33)</td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2592253704" target="_blank">OR672823</a>
+                                </td>
+                            </tr><tr>
+                                <td class="dt-type-numeric sorting_1">23</td>
+                                <td>Fusarium proliferatum (KJC34)</td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2592253705" target="_blank">OR672824</a>
+                                </td>
+                            </tr><tr>
+                                <td class="dt-type-numeric sorting_1">24</td>
+                                <td>Alternaria tenuissima (KJC41)</td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2592253707" target="_blank">OR672826</a>
+                                </td>
+                            </tr><tr>
+                                <td class="dt-type-numeric sorting_1">25</td>
+                                <td>Penicillium citrinum (KJC54)</td>
+                                <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2592253716" target="_blank">OR672831</a>
+                                </td>
+                            </tr></tbody>
+                            <tbody><tr>
+                            <td class="dt-type-numeric sorting_1">1</td>
+                            <td>Aspergillus tubingensis (KJC48)</td>
+                            <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/OR616777" target="_blank">OR616777</a>
+                            </td>
+                        </tr><tr>
+                            <td class="dt-type-numeric sorting_1">2</td>
+                            <td>Aspergillus niger (KJC47)</td>
+                            <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2585994762" target="_blank">OR616775</a>
+                            </td>
+                        </tr><tr>
+                            <td class="dt-type-numeric sorting_1">3</td>
+                            <td>Aspergillus nidulans (KJC61)</td>
+                            <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2586001060" target="_blank">OR616783</a>
+                            </td>
+                        </tr><tr>
+                            <td class="dt-type-numeric sorting_1">4</td>
+                            <td>Aspergillus nidulans (KJC62)</td>
+                            <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2586002283" target="_blank">OR616785</a>
+                            </td>
+                        </tr><tr>
+                            <td class="dt-type-numeric sorting_1">5</td>
+                            <td>Aspergillus oryzae (KJC77)</td>
+                            <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2586023902" target="_blank">OR616795</a>
+                            </td>
+                        </tr><tr>
+                            <td class="dt-type-numeric sorting_1">6</td>
+                            <td>Aspergillus wentii (KJC75)</td>
+                            <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2586021506" target="_blank">OR616794</a>
+                            </td>
+                        </tr><tr>
+                            <td class="dt-type-numeric sorting_1">7</td>
+                            <td>Aspergillus aculeatus (KJC74)</td>
+                            <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2586018913" target="_blank">OR616792</a>
+                            </td>
+                        </tr><tr>
+                            <td class="dt-type-numeric sorting_1">8</td>
+                            <td>Aspergillus ustus (KJC45)</td>
+                            <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2589082366" target="_blank">OR637385</a>
+                            </td>
+                        </tr><tr>
+                            <td class="dt-type-numeric sorting_1">9</td>
+                            <td>Aspergillus ustus (KJC53)</td>
+                            <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2589082365" target="_blank">OR637384</a>
+                            </td>
+                        </tr><tr>
+                            <td class="dt-type-numeric sorting_1">10</td>
+                            <td>Aspergillus tubingensis (KJC58)</td>
+                            <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2585997417" target="_blank">OR616779</a>
+                            </td>
+                        </tr><tr>
+                            <td class="dt-type-numeric sorting_1">11</td>
+                            <td>Aspergillus flavus (KJC73)</td>
+                            <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2586014847" target="_blank">OR616791</a>
+                            </td>
+                        </tr><tr>
+                            <td class="dt-type-numeric sorting_1">12</td>
+                            <td>Aspergillus niger (KJC79)</td>
+                            <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2586026604" target="_blank">OR616796</a>
+                            </td>
+                        </tr><tr>
+                            <td class="dt-type-numeric sorting_1">13</td>
+                            <td>Mucor amphibiorum (KJC59)</td>
+                            <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2585998507" target="_blank">OR616781</a>
+                            </td>
+                        </tr><tr>
+                            <td class="dt-type-numeric sorting_1">14</td>
+                            <td>Aspergillus flavus (KJC60)</td>
+                            <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2586001061" target="_blank">OR616782</a>
+                            </td>
+                        </tr><tr>
+                            <td class="dt-type-numeric sorting_1">15</td>
+                            <td>Aspergillus nidulans (KJC72)</td>
+                            <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2586010402" target="_blank">OR616790</a>
+                            </td>
+                        </tr><tr>
+                            <td class="dt-type-numeric sorting_1">16</td>
+                            <td>Aspergillus versicolor (KJC36)</td>
+                            <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2584991908" target="_blank">OR616738</a>
+                            </td>
+                        </tr><tr>
+                            <td class="dt-type-numeric sorting_1">17</td>
+                            <td>Aspergillus niger (KJC39)</td>
+                            <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2585991149" target="_blank">OR616768</a>
+                            </td>
+                        </tr><tr>
+                            <td class="dt-type-numeric sorting_1">18</td>
+                            <td>Aspergillus fumigatus (KJC68)</td>
+                            <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2586006420" target="_blank">OR616787</a>
+                            </td>
+                        </tr><tr>
+                            <td class="dt-type-numeric sorting_1">19</td>
+                            <td>Aspergillus terreus (KJC69)</td>
+                            <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2586008393" target="_blank">OR616789</a>
+                            </td>
+                        </tr><tr>
+                            <td class="dt-type-numeric sorting_1">20</td>
+                            <td>Aspergillus niger (KJC67)</td>
+                            <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2586005037" target="_blank">OR616786</a>
+                            </td>
+                        </tr><tr>
+                            <td class="dt-type-numeric sorting_1">21</td>
+                            <td>Aspergillus flavus (KJC30)</td>
+                            <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2592253703" target="_blank">OR672822</a>
+                            </td>
+                        </tr><tr>
+                            <td class="dt-type-numeric sorting_1">22</td>
+                            <td>Aspergillus terreus (KJC33)</td>
+                            <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2592253704" target="_blank">OR672823</a>
+                            </td>
+                        </tr><tr>
+                            <td class="dt-type-numeric sorting_1">23</td>
+                            <td>Fusarium proliferatum (KJC34)</td>
+                            <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2592253705" target="_blank">OR672824</a>
+                            </td>
+                        </tr><tr>
+                            <td class="dt-type-numeric sorting_1">24</td>
+                            <td>Alternaria tenuissima (KJC41)</td>
+                            <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2592253707" target="_blank">OR672826</a>
+                            </td>
+                        </tr><tr>
+                            <td class="dt-type-numeric sorting_1">25</td>
+                            <td>Penicillium citrinum (KJC54)</td>
+                            <td><a href="https://www.ncbi.nlm.nih.gov/nuccore/2592253716" target="_blank">OR672831</a>
+                            </td>
+                        </tr></tbody>
+                    <tfoot></tfoot></table></div></div><div class="row mt-2 justify-content-between"><div class="col-md-auto me-auto "><div class="dt-info" aria-live="polite" id="catalog_info" role="status">Showing 1 to 25 of 129 entries</div></div><div class="col-md-auto ms-auto "><div class="dt-paging paging_full_numbers"><ul class="pagination">
+                        <li class="dt-paging-button page-item disabled"><a class="page-link first" aria-controls="catalog" aria-disabled="true" aria-label="First" data-dt-idx="first" tabindex="-1">«</a></li><li class="dt-paging-button page-item disabled"><a class="page-link previous" aria-controls="catalog" aria-disabled="true" aria-label="Previous" data-dt-idx="previous" tabindex="-1">‹</a>
+                        </li><li class="dt-paging-button page-item active"><a href="#" class="page-link" aria-controls="catalog" aria-current="page" data-dt-idx="0" tabindex="0">1</a></li><li class="dt-paging-button page-item"><a href="#" class="page-link" aria-controls="catalog" data-dt-idx="1" tabindex="0">2</a></li><li class="dt-paging-button page-item"><a href="#" class="page-link" aria-controls="catalog" data-dt-idx="2" tabindex="0">3</a></li>
+                        <li class="dt-paging-button page-item"><a href="#" class="page-link" aria-controls="catalog" data-dt-idx="3" tabindex="0">4</a></li><li class="dt-paging-button page-item"><a href="#" class="page-link" aria-controls="catalog" data-dt-idx="4" tabindex="0">5</a></li><li class="dt-paging-button page-item"><a href="#" class="page-link" aria-controls="catalog" data-dt-idx="5" tabindex="0">6</a></li>
+                        <li class="dt-paging-button page-item"><a href="#" class="page-link next" aria-controls="catalog" aria-label="Next" data-dt-idx="next" tabindex="0">›</a>
+                        </li><li class="dt-paging-button page-item"><a href="#" class="page-link last" aria-controls="catalog" aria-label="Last" data-dt-idx="last" tabindex="0">»</a></li></ul>
+                    </div></div></div></div>
+                </div>
+            </section>
+        </main>
+    </body>
+    </html>
